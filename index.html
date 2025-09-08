@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وظيفتك بين يديك | Yemen Jobs Hub</title>
+    <meta name="description" content="المنصة الأولى للتوظيف في اليمن - وظائف في جميع المحافظات، عمل عن بعد، توظيف سريع خلال 3 أيام">
+    <meta name="keywords" content="وظائف اليمن, وظائف صنعاء, عمل في عدن, ابحث عن عمل, توظيف, وظائف عن بعد, عمل اونلاين, وظائف تعليمية, وظائف محاسبة, توظيف في الحديدة, وظائف حكومية, أشتي وظيفة">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-black: #000000;
+            --primary-white: #FFFFFF;
+            --primary-beige: #F5F5DC;
+            --accent-gold: #D4AF37;
+            --accent-blue: #1E90FF;
+            --text-dark: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+            line-height: 1.6;
+        }
+        
+        /* الهيدر صغير الحجم كما طلبت */
+        header {
+            background: linear-gradient(135deg, var(--primary-black) 0%, #333333 100%);
+            color: var(--primary-white);
+            padding: 5px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .logo-text span {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--primary-white);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--primary-white);
+            position: relative;
+            margin-top: 60px;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        .search-box {
+            background: var(--primary-white);
+            border-radius: 50px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1.4s ease;
+        }
+        
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            background: transparent;
+            text-align: right;
+        }
+        
+        .search-box button {
+            background: var(--accent-gold);
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: var(--primary-black);
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .search-box button:hover {
+            background: #C19B30;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            animation: fadeInUp 1.6s ease;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .features {
+            padding: 60px 20px;
+            background: var(--primary-beige);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-black);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            background: var(--primary-white);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--accent-gold);
+        }
+        
+        .registration {
+            padding: 60px 20px;
+            background: var(--primary-white);
+        }
+        
+        .options-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .option-card {
+            background: var(--primary-beige);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .option-card:hover {
+            border-color: var(--accent-gold);
+        }
+        
+        .option-card h3 {
+            margin-bottom: 20px;
+            color: var(--primary-black);
+        }
+        
+        .option-card .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            margin: 15px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--primary-black);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #C19B30;
+            transform: translateY(-3px);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+        }
+        
+        .commission-system {
+            padding: 60px 20px;
+            background: var(--primary-beige);
+        }
+        
+        .services {
+            padding: 60px 20px;
+            background: var(--primary-white);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-item {
+            background: var(--primary-beige);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary-black) 0%, #333333 100%);
+            color: var(--primary-white);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        footer {
+            background: #111;
+            color: var(--primary-white);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        
+        .visitor-counter {
+            background: var(--primary-black);
+            color: var(--primary-white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .keyword-section {
+            background: var(--primary-beige);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .keyword {
+            background: var(--primary-white);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            
+            nav ul {
+                margin-top: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+                border-radius: 10px;
+            }
+            
+            .search-box input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat-item {
+                margin: 5px 0;
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">
+                <h1>وظيفتك بين يديك</h1>
+                <span>Yemen Jobs Hub</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#registration">التسجيل</a></li>
+                <li><a href="#commission">اكسب 10%</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الهيرو -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>وظائف في كل أنحاء اليمن</h2>
+            <p>المنصة الأولى للتوظيف الشامل عبر الإنترنت في الجمهورية اليمنية</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="ابحث عن وظيفة أو مجال عمل...">
+                <button>بحث</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span id="visitor-count">1,245,222</span> زائر
+                </div>
+                <div class="stat-item">
+                    <span>5,321</span> وظيفة متاحة
+                </div>
+                <div class="stat-item">
+                    <span>2,154</span> شركة مشاركة
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الكلمات المفتاحية -->
+    <section class="keyword-section">
+        <h2 class="section-title">ابحث عن وظائف في كل المجالات</h2>
+        <div class="keywords">
+            <span class="keyword">وظائف في صنعاء</span>
+            <span class="keyword">ابحث عن عمل في صنعاء</span>
+            <span class="keyword">اشتي وظيفة في اليمن</span>
+            <span class="keyword">وظائف في عدن</span>
+            <span class="keyword">وظائف في الحديدة</span>
+            <span class="keyword">وظائف تعليمية</span>
+            <span class="keyword">وظائف محاسبة</span>
+            <span class="keyword">وظائف إدارية</span>
+            <span class="keyword">وظائف تقنية</span>
+            <span class="keyword">عمل عن بعد</span>
+            <span class="keyword">وظائف حكومية</span>
+            <span class="keyword">وظائف خاصة</span>
+        </div>
+    </section>
+
+    <!-- المميزات -->
+    <section class="features">
+        <h2 class="section-title">مميزات موقعنا</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <h3>وظيفة خلال 3 أيام</h3>
+                <p>احصل على وظيفة في مدة أقصاها ثلاثة أيام من بعد التسجيل</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-laptop-house"></i></div>
+                <h3>عمل عن بعد</h3>
+                <p>امكانية العمل من المنزل مع فريقنا أو مع شركات أخرى</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-money-bill-wave"></i></div>
+                <h3>استرداد الأموال</h3>
+                <p>حق استعادة المال إذا لم تحصل على وظيفة</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                <h3>وساطة مجانية</h3>
+                <p>بدل دفع 2000 ريال، انشر الموقع واحصل على وظيفة مجانًا</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- التسجيل -->
+    <section class="registration" id="registration">
+        <h2 class="section-title">طريقة التسجيل</h2>
+        <div class="options-container">
+            <div class="option-card">
+                <h3>التسجيل المدفوع</h3>
+                <p>ادفع 2000 ريال واحصل على وظيفة خلال 3 أيام كحد أقصى</p>
+                <div class="price">2,000 ريال</div>
+                <p>تحويل عبر كريمي اكسبرس إلى الرقم: 774968713</p>
+                <a href="#" class="btn">سجل الآن</a>
+            </div>
+            <div class="option-card">
+                <h3>التسجيل المجاني</h3>
+                <p>انشر الموقع في 5 مجموعات واتساب + 5 منشورات فيسبوك يوميًا لمدة 3 أيام</p>
+                <div class="price">مجانًا</div>
+                <p>احصل على وظيفتك في اليوم الثالث!</p>
+                <a href="#" class="btn">ابدأ النشر</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- نظام العمولة -->
+    <section class="commission-system" id="commission">
+        <h2 class="section-title">اكسب 10% من كل مرتب</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-users"></i></div>
+                <h3>نظام الإحالة</h3>
+                <p>كل شخص يقوم بنشر الموقع أو إدخال موظفين له نسبة 10% من كل مرتب موظف قام بالتسجيل عبرة</p>
+                <a href="#" class="btn">احصل على رابط الإحالة</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                <h3>أرباح مستمرة</h3>
+                <p>احصل على عمولة مستمرة من كل موظف قمت بإدخاله إلى النظام</p>
+                <a href="#" class="btn">تعرف أكثر</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section class="services" id="services">
+        <h2 class="section-title">خدماتنا الإضافية</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>تقديم فيزا عمل</h3>
+                <p>للمملكة العربية السعودية ودول الخليج</p>
+            </div>
+            <div class="service-item">
+                <h3>إدارة الأعراس</h3>
+                <p>كوادر ذكية لإدارة حفلات الأعراس</p>
+            </div>
+            <div class="service-item">
+                <h3>إدارة المطابخ</h3>
+                <p>خدمات إدارة المطابخ والمطاعم</p>
+            </div>
+            <div class="service-item">
+                <h3>إدارة المنشآت</h3>
+                <p>إدارة المشاريع والمنشآت بكفاءة</p>
+            </div>
+            <div class="service-item">
+                <h3>خدمات الأمن</h3>
+                <p>توفير حراسات وخدمات أمنية</p>
+            </div>
+            <div class="service-item">
+                <h3>خدمات البناء</h3>
+                <p>مقاولات وخدمات بناء متكاملة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>طريقة التواصل المباشر</h3>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <a href="https://wa.me/967780725542" class="btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> واتساب: 780725542
+                        </a>
+                    </div>
+                    <div class="contact-method">
+                        <a href="https://wa.me/967774968713" class="btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> واتساب: 774968713
+                        </a>
+                    </div>
+                    <div class="contact-method">
+                        <a href="mailto:sabresuldan@gmail.com" class="btn">
+                            <i class="fas fa-envelope"></i> البريد الإلكتروني
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h3>عنواننا</h3>
+                <p>صنعاء، خط المطار الجديد</p>
+                <div class="visitor-counter">
+                    <i class="fas fa-users"></i> زوار الموقع: <span id="live-counter">1,245,222</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2023 - وظيفتك بين يديك | Yemen Jobs Hub</p>
+   <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2023 - وظيفتك بين يديك | Yemen Jobs Hub</p>
+    </footer>
+
+    <script>
+        // زيادة عدد الزوار تلقائياً
+        function animateCounter() {
+            const counter = document.getElementById('live-counter');
+            const visitorCount = document.getElementById('visitor-count');
+            let count = 1245222;
+            
+            setInterval(() => {
+                count += Math.floor(Math.random() * 10) + 1;
+                counter.textContent = count.toLocaleString();
+                visitorCount.textContent = count.toLocaleString();
+            }, 5000);
+        }
+        
+        // تأثيرات التمرير
+        function setupAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 1s ease forwards';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.feature-card, .option-card, .service-item').forEach(item => {
+                item.style.opacity = '0';
+                observer.observe(item);
+            });
+        }
+        
+        // تشغيل كل شيء عند تحميل الصفحة
+        window.addEventListener('DOMContentLoaded', () => {
+            animateCounter();
+            setupAnimations();
+        });
+    </script>
+</body>
+</html>
