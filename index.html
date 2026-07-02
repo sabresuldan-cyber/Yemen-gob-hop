@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وظيفتك بين يديك | Yemen Jobs Hub</title>
-    <meta name="description" content="المنصة الأولى للتوظيف في اليمن - وظائف في جميع المحافظات، عمل عن بعد، توظيف سريع خلال 3 أيام">
-    <meta name="keywords" content="وظائف اليمن, وظائف صنعاء, عمل في عدن, ابحث عن عمل, توظيف, وظائف عن بعد, عمل اونلاين, وظائف تعليمية, وظائف محاسبة, توظيف في الحديدة, وظائف حكومية, أشتي وظيفة">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     في عدن, ابحث عن عمل, توظيف, وظائف عن بعد, عمل اونلاين, وظائف تعليمية, وظائف محاسبة, توظيف في الحديدة, وظائف حكومية, أشتي وظيفة">
+    <title>وظيفتك بين يديك | Saudi Jobs Hub</title>
+    <meta name="description" content="المنصة الأولى للتوظيف في المملكة العربية السعودية - وظائف في جميع المدن، رواتب مغرية، توظيف سريع">
+    <meta name="keywords" content="وظائف السعودية, وظائف الرياض, وظائف جدة, وظائف الدمام, ابحث عن عمل, توظيف, وظائف بدون شهادة, وظائف حكومية, وظائف خاصة, رواتب عالية">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="google-site-verification" content="JY5sCzbNwP0l3vzb7UvYt2G9NXqu6dO1ZPmXGYZUcZw" />
     <style>
+        /* تم الحفاظ على كود الملكية الأصلي بالكامل */
         :root {
             --primary-black: #000000;
             --primary-white: #FFFFFF;
@@ -18,6 +17,7 @@
             --accent-gold: #D4AF37;
             --accent-blue: #1E90FF;
             --text-dark: #333333;
+            --saudi-green: #1a8a3f;
         }
         
         * {
@@ -33,9 +33,8 @@
             line-height: 1.6;
         }
         
-        /* الهيدر صغير الحجم كما طلبت */
         header {
-            background: linear-gradient(135deg, var(--primary-black) 0%, #333333 100%);
+            background: linear-gradient(135deg, var(--primary-black) 0%, #1a3a2a 100%);
             color: var(--primary-white);
             padding: 5px 20px;
             position: fixed;
@@ -187,6 +186,11 @@
             text-align: center;
             margin-bottom: 40px;
             color: var(--primary-black);
+            font-size: 2rem;
+        }
+        
+        .section-title span {
+            color: var(--saudi-green);
         }
         
         .features-grid {
@@ -314,7 +318,7 @@
         
         .contact {
             padding: 60px 20px;
-            background: linear-gradient(135deg, var(--primary-black) 0%, #333333 100%);
+            background: linear-gradient(135deg, var(--primary-black) 0%, #1a3a2a 100%);
             color: var(--primary-white);
         }
         
@@ -385,6 +389,99 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
+        /* ====== أقسام الوظائف الجديدة ====== */
+        .jobs-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .job-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-right: 5px solid var(--saudi-green);
+            transition: all 0.3s;
+            position: relative;
+        }
+        .job-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }
+        .job-card .job-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-black);
+        }
+        .job-card .job-location {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+        .job-card .job-salary {
+            color: var(--saudi-green);
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .job-card .job-desc {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .job-card .job-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn-apply {
+            background: var(--saudi-green);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            flex: 1;
+            min-width: 120px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .btn-apply:hover {
+            background: #0f6b2f;
+            transform: scale(1.02);
+        }
+        .btn-share {
+            background: #1DA1F2;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .btn-share:hover {
+            background: #0d8bde;
+        }
+        .btn-share.whatsapp-share { background: #25D366; }
+        .btn-share.whatsapp-share:hover { background: #1da85a; }
+        .btn-share.twitter-share { background: #000; }
+        .btn-share.twitter-share:hover { background: #333; }
+        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -396,76 +493,71 @@
             }
         }
         
-        /* Responsive Design */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
                 height: auto;
                 padding: 10px;
             }
-            
             nav ul {
                 margin-top: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            
             nav ul li {
                 margin: 5px 10px;
             }
-            
             .hero-content h2 {
                 font-size: 2rem;
             }
-            
             .search-box {
                 flex-direction: column;
                 border-radius: 10px;
             }
-            
             .search-box input {
                 width: 100%;
                 margin-bottom: 10px;
             }
-            
             .stats {
                 flex-direction: column;
                 align-items: center;
             }
-            
             .stat-item {
                 margin: 5px 0;
                 width: 100%;
                 max-width: 250px;
             }
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- الهيدر -->
+    <!-- الهيدر (تم تغيير الاسم ليتناسب مع السعودية) -->
     <header>
         <div class="logo-container">
             <div class="logo-text">
                 <h1>وظيفتك بين يديك</h1>
-                <span>Yemen Jobs Hub</span>
+                <span>Saudi Jobs Hub</span>
             </div>
         </div>
         <nav>
             <ul>
                 <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#jobs">الوظائف</a></li>
                 <li><a href="#registration">التسجيل</a></li>
                 <li><a href="#commission">اكسب 10%</a></li>
-                <li><a href="#services">خدماتنا</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- قسم الهيرو -->
+    <!-- قسم الهيرو (تم التعديل للسعودية) -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h2>وظائف في كل أنحاء اليمن</h2>
-            <p>المنصة الأولى للتوظيف الشامل عبر الإنترنت في الجمهورية اليمنية</p>
+            <h2>وظائف في كل أنحاء السعودية</h2>
+            <p>المنصة الأولى للتوظيف الشامل في المملكة العربية السعودية برواتب مغرية</p>
             
             <div class="search-box">
                 <input type="text" placeholder="ابحث عن وظيفة أو مجال عمل...">
@@ -477,35 +569,35 @@
                     <span id="visitor-count">1,245,222</span> زائر
                 </div>
                 <div class="stat-item">
-                    <span>5,321</span> وظيفة متاحة
+                    <span>8,700+</span> وظيفة متاحة
                 </div>
                 <div class="stat-item">
-                    <span>2,154</span> شركة مشاركة
+                    <span>3,200+</span> شركة مشاركة
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- الكلمات المفتاحية -->
+    <!-- الكلمات المفتاحية (تم التعديل للسعودية) -->
     <section class="keyword-section">
         <h2 class="section-title">ابحث عن وظائف في كل المجالات</h2>
         <div class="keywords">
-            <span class="keyword">وظائف في صنعاء</span>
-            <span class="keyword">ابحث عن عمل في صنعاء</span>
-            <span class="keyword">اشتي وظيفة في اليمن</span>
-            <span class="keyword">وظائف في عدن</span>
-            <span class="keyword">وظائف في الحديدة</span>
+            <span class="keyword">وظائف الرياض</span>
+            <span class="keyword">وظائف جدة</span>
+            <span class="keyword">وظائف الدمام</span>
+            <span class="keyword">وظائف مكة</span>
+            <span class="keyword">وظائف المدينة</span>
+            <span class="keyword">وظائف بدون شهادة</span>
             <span class="keyword">وظائف تعليمية</span>
             <span class="keyword">وظائف محاسبة</span>
             <span class="keyword">وظائف إدارية</span>
             <span class="keyword">وظائف تقنية</span>
             <span class="keyword">عمل عن بعد</span>
             <span class="keyword">وظائف حكومية</span>
-            <span class="keyword">وظائف خاصة</span>
         </div>
     </section>
 
-    <!-- المميزات -->
+    <!-- المميزات (تم تعديل العملة) -->
     <section class="features">
         <h2 class="section-title">مميزات موقعنا</h2>
         <div class="features-grid">
@@ -527,20 +619,30 @@
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-handshake"></i></div>
                 <h3>وساطة مجانية</h3>
-                <p>بدل دفع 2000 ريال، انشر الموقع واحصل على وظيفة مجانًا</p>
+                <p>بدل دفع 2000 ر.س، انشر الموقع واحصل على وظيفة مجانًا</p>
             </div>
+        </div>
+        
+    </section>
+        <!-- ====== قسم الوظائف المغرية (تمت الإضافة بالكامل) ====== -->
+    <section class="jobs-section" id="jobs">
+        <h2 class="section-title">وظائف مغرية <span>برواتب عالية</span></h2>
+        <p style="text-align:center; max-width:700px; margin:0 auto 30px; color:#555;">وظائف متنوعة لا تشترط شهادات عليا، رواتب تصل إلى 9,000 ريال سعودي</p>
+        
+        <div class="jobs-grid" id="jobsContainer">
+            <!-- سيتم إضافة الوظائف بواسطة JavaScript لتسهيل التعديل -->
         </div>
     </section>
 
-    <!-- التسجيل -->
+    <!-- التسجيل (تم تغيير العملة لريال سعودي) -->
     <section class="registration" id="registration">
         <h2 class="section-title">طريقة التسجيل</h2>
         <div class="options-container">
             <div class="option-card">
                 <h3>التسجيل المدفوع</h3>
-                <p>ادفع 2000 ريال واحصل على وظيفة خلال 3 أيام كحد أقصى</p>
-                <div class="price">2,000 ريال</div>
-                <p>تحويل عبر كريمي اكسبرس إلى الرقم: 774968713</p>
+                <p>ادفع 2000 ريال سعودي واحصل على وظيفة خلال 3 أيام كحد أقصى</p>
+                <div class="price">2,000 ر.س</div>
+                <p>تحويل عبر التحويل البنكي أو STC Pay</p>
                 <a href="#" class="btn">سجل الآن</a>
             </div>
             <div class="option-card">
@@ -560,7 +662,7 @@
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-users"></i></div>
                 <h3>نظام الإحالة</h3>
-                <p>كل شخص يقوم بنشر الموقع أو إدخال موظفين له نسبة 10% من كل مرتب موظف قام بالتسجيل عبرة</p>
+                <p>كل شخص يقوم بنشر الموقع أو إدخال موظفين له نسبة 10% من كل مرتب موظف قام بالتسجيل عبره</p>
                 <a href="#" class="btn">احصل على رابط الإحالة</a>
             </div>
             <div class="feature-card">
@@ -572,7 +674,7 @@
         </div>
     </section>
 
-    <!-- الخدمات -->
+    <!-- الخدمات (تم التعديل) -->
     <section class="services" id="services">
         <h2 class="section-title">خدماتنا الإضافية</h2>
         <div class="services-grid">
@@ -581,11 +683,11 @@
                 <p>للمملكة العربية السعودية ودول الخليج</p>
             </div>
             <div class="service-item">
-                <h3>إدارة الأعراس</h3>
-                <p>كوادر ذكية لإدارة حفلات الأعراس</p>
+                <h3>استقدام العمالة</h3>
+                <p>خدمات استقدام منزلية وفنية</p>
             </div>
             <div class="service-item">
-                <h3>إدارة المطابخ</h3>
+                <h3>إدارة المطاعم</h3>
                 <p>خدمات إدارة المطابخ والمطاعم</p>
             </div>
             <div class="service-item">
@@ -603,33 +705,28 @@
         </div>
     </section>
 
-    <!-- التواصل -->
+    <!-- التواصل (تم تغيير الأرقام والبريد الإلكتروني والعنوان للسعودية) -->
     <section class="contact" id="contact">
-        <h2 class="section-title">تواصل معنا</h2>
+        <h2 class="section-title" style="color:white;">تواصل معنا</h2>
         <div class="contact-container">
             <div class="contact-info">
                 <h3>طريقة التواصل المباشر</h3>
                 <div class="contact-methods">
                     <div class="contact-method">
-                        <a href="https://wa.me/967780725542" class="btn whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> واتساب: 780725542
+                        <a href="https://wa.me/966500000000" class="btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> واتساب: 0500000000
                         </a>
                     </div>
                     <div class="contact-method">
-                        <a href="https://wa.me/967774968713" class="btn whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> واتساب: 774968713
-                        </a>
-                    </div>
-                    <div class="contact-method">
-                        <a href="mailto:sabresuldan@gmail.com" class="btn">
-                            <i class="fas fa-envelope"></i> البريد الإلكتروني
+                        <a href="mailto:f7413308@mail.com" class="btn">
+                            <i class="fas fa-envelope"></i> البريد الإلكتروني للتوظيف
                         </a>
                     </div>
                 </div>
             </div>
             <div class="contact-info">
                 <h3>عنواننا</h3>
-                <p>صنعاء، خط المطار الجديد</p>
+                <p>الرياض، المملكة العربية السعودية</p>
                 <div class="visitor-counter">
                     <i class="fas fa-users"></i> زوار الموقع: <span id="live-counter">1,245,222</span>
                 </div>
@@ -639,14 +736,14 @@
 
     <!-- الفوتر -->
     <footer>
-        <p>جميع الحقوق محفوظة © 2023 - وظيفتك بين يديك | Yemen Jobs Hub</p>
-   <!-- الفوتر -->
-    <footer>
-        <p>جميع الحقوق محفوظة © 2023 - وظيفتك بين يديك | Yemen Jobs Hub</p>
+        <p>جميع الحقوق محفوظة © 2025 - وظيفتك بين يديك | Saudi Jobs Hub</p>
+        <p style="font-size:12px; opacity:0.6;">تم التطوير وفق رؤية المملكة 2030</p>
     </footer>
 
     <script>
-        // زيادة عدد الزوار تلقائياً
+        // ===== تم الحفاظ على كود الملكية الأصلي =====
+        
+        // 1. زيادة عدد الزوار تلقائياً (كود أصلي محفوظ)
         function animateCounter() {
             const counter = document.getElementById('live-counter');
             const visitorCount = document.getElementById('visitor-count');
@@ -654,12 +751,12 @@
             
             setInterval(() => {
                 count += Math.floor(Math.random() * 10) + 1;
-                counter.textContent = count.toLocaleString();
-                visitorCount.textContent = count.toLocaleString();
+                if(counter) counter.textContent = count.toLocaleString();
+                if(visitorCount) visitorCount.textContent = count.toLocaleString();
             }, 5000);
         }
         
-        // تأثيرات التمرير
+        // 2. تأثيرات التمرير (كود أصلي محفوظ)
         function setupAnimations() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -669,17 +766,98 @@
                 });
             }, { threshold: 0.1 });
             
-            document.querySelectorAll('.feature-card, .option-card, .service-item').forEach(item => {
+            document.querySelectorAll('.feature-card, .option-card, .service-item, .job-card').forEach(item => {
                 item.style.opacity = '0';
                 observer.observe(item);
             });
         }
         
-        // تشغيل كل شيء عند تحميل الصفحة
+        // ===== قسم الوظائف المغرية (تمت الإضافة الجديدة) =====
+        const jobsData = [
+            { id: 1, title: 'مندوب توصيل طلبات', location: 'الرياض - جدة - الدمام', salary: '4,500 - 6,000 ر.س', desc: 'لا يشترط مؤهل عالي، يفضل خبرة في التوصيل ورخصة قيادة سارية.' },
+            { id: 2, title: 'موظف استقبال (رجال / نساء)', location: 'مكة - المدينة - الخبر', salary: '5,000 - 7,000 ر.س', desc: 'مهارات تواصل ممتازة، إجادة الحاسب الآلي، الثانوية فما فوق.' },
+            { id: 3, title: 'مساعد إداري', location: 'الرياض - جدة', salary: '5,500 - 7,500 ر.س', desc: 'تنظيم الملفات، إدارة المواعيد، إجادة استخدام Office.' },
+            { id: 4, title: 'سائق توصيل (شركة ناشئة)', location: 'جميع المدن', salary: '4,000 - 5,500 ر.س', desc: 'رخصة قيادة سارية، معرفة بالطرق، دوام مرن.' },
+            { id: 5, title: 'محاسب مبتدئ', location: 'الدمام - الخبر', salary: '6,000 - 8,000 ر.س', desc: 'دبلوم أو بكالوريوس محاسبة، خبرة 0-1 سنة (نقبل حديثي التخرج).' },
+            { id: 6, title: 'أخصائي تسويق رقمي', location: 'الرياض (عن بعد)', salary: '7,000 - 9,000 ر.س', desc: 'إدارة حسابات التواصل الاجتماعي، معرفة بأدوات التسويق، يفضل خبرة بسيطة.' },
+            { id: 7, title: 'موظف خدمة عملاء', location: 'جدة - مكة', salary: '4,500 - 6,500 ر.س', desc: 'مهارات اتصال ممتازة، القدرة على حل المشكلات، الثانوية كحد أدنى.' },
+            { id: 8, title: 'مساعد مدير مطعم', location: 'الرياض - الدمام', salary: '6,000 - 8,500 ر.س', desc: 'خبرة في إدارة المطاعم أو الخدمات الغذائية، متابعة العمليات اليومية.' },
+            { id: 9, title: 'حارس أمن (مدارس / مجمعات)', location: 'مكة - المدينة', salary: '4,000 - 5,000 ر.س', desc: 'يشترط الكفاءة البدنية، لا يشترط مؤهل دراسي، دورات أمنية إضافية مفضلة.' },
+            { id: 10, title: 'منسق فعاليات ومناسبات', location: 'الرياض - جدة', salary: '6,500 - 8,500 ر.س', desc: 'تنظيم حفلات ومؤتمرات، مهارات تنظيمية عالية، يفضل خبرة في المجال.' }
+        ];
+
+        function renderJobs() {
+            const container = document.getElementById('jobsContainer');
+            if (!container) return;
+            
+            container.innerHTML = jobsData.map(job => `
+                <div class="job-card">
+                    <div class="job-title">${job.title}</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt" style="color:var(--saudi-green);"></i> ${job.location}</div>
+                    <div class="job-salary"><i class="fas fa-money-bill-wave"></i> ${job.salary}</div>
+                    <div class="job-desc">${job.desc}</div>
+                    <div class="job-actions">
+                        <button class="btn-apply" onclick="applyForJob(${job.id}, '${job.title.replace(/'/g, "\\'")}')">
+                            <i class="fas fa-paper-plane"></i> قدم الآن (أرسل السيفي)
+                        </button>
+                        <button class="btn-share whatsapp-share" onclick="shareJob('${job.id}', '${job.title.replace(/'/g, "\\'")}', 'wa')">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="btn-share twitter-share" onclick="shareJob('${job.id}', '${job.title.replace(/'/g, "\\'")}', 'tw')">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="btn-share" style="background:#1877F2;" onclick="shareJob('${job.id}', '${job.title.replace(/'/g, "\\'")}', 'fb')">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ===== دالة التقديم التلقائي (ترسل رقم الوظيفة والسيفي إلى البريد المطلوب) =====
+        function applyForJob(jobId, jobTitle) {
+            const email = 'f7413308@mail.com';
+            const subject = `طلب توظيف للوظيفة رقم ${jobId} - ${jobTitle}`;
+            const body = `السلام عليكم ورحمة الله وبركاته،%0D%0A%0D%0Aأنا مهتم بالوظيفة المعلنة (رقم ${jobId} - ${jobTitle})، وسأقوم بإرفاق سيرتي الذاتية (السيفي) مع هذا البريد الإلكتروني.%0D%0A%0D%0Aأتمنى الاطلاع على طلبي والتواصل معي في أقرب وقت.%0D%0A%0D%0Aشكراً لكم.`;
+            
+            // فتح عميل البريد الإلكتروني تلقائياً
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+            
+            // تنبيه للمستخدم
+            alert(`✅ تم فتح البريد الإلكتروني. 
+الرجاء إرفاق السيرة الذاتية (CV) الخاصة بك وإرسالها إلى:
+${email}
+
+(الوظيفة رقم ${jobId} - ${jobTitle})`);
+        }
+
+        // ===== دالة المشاركة (WhatsApp, Twitter, Facebook) =====
+        function shareJob(jobId, jobTitle, platform) {
+            const url = window.location.href;
+            const text = `🔹 وظيفة مغرية في السعودية: ${jobTitle} (رقم ${jobId}) 
+💰 رواتب تبدأ من 4,000 ريال
+📌 تقدم الآن عبر الرابط: ${url}`;
+            
+            let shareUrl = '';
+            if (platform === 'wa') {
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+            } else if (platform === 'tw') {
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+            } else if (platform === 'fb') {
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`;
+            }
+            
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=500');
+            }
+        }
+
+        // ===== تشغيل كل شيء عند تحميل الصفحة =====
         window.addEventListener('DOMContentLoaded', () => {
-            animateCounter();
-            setupAnimations();
+            animateCounter();      // كود أصلي محفوظ
+            setupAnimations();     // كود أصلي محفوظ
+            renderJobs();          // الكود الجديد للوظائف
         });
     </script>
 </body>
-</html>
+    </html>
